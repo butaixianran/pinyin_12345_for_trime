@@ -1,0 +1,61 @@
+patch:
+  "preset_keyboards/pinyin_12345":
+    name: 声调拼音
+    author: "butaixianran"
+    ascii_mode: 0
+    width: 10
+    height: 44
+    lock: true
+    keys:
+    - {click: '1', long_click: '!'}
+    - {click: '2', long_click: '@'}
+    - {click: '3', long_click: '#'}
+    - {click: '4', long_click: '$'}
+    - {click: '5', long_click: '%'}
+    - {click: '6', long_click: '^'}
+    - {click: '7', long_click: '&'}
+    - {click: '8', long_click: '*'}
+    - {click: '9', long_click: '('}
+    - {click: '0', long_click: ')'}
+    - {click: 'q', long_click: '_'}
+    - {click: 'w', long_click: '-'}
+    - {click: 'e', long_click: '+'}
+    - {click: 'r', long_click: '='}
+    - {click: 't', long_click: '|'}
+    - {click: 'y', long_click: '\'}
+    - {click: 'u', long_click: '['}
+    - {click: 'i', long_click: ']'}
+    - {click: 'o', long_click: '{'}
+    - {click: 'p', long_click: '}'}
+    - {width: 5}
+    - {click: 'a', long_click: select_all }
+    - {click: 's', long_click: To_Start}
+    - {click: 'd', long_click: To_End}
+    - {click: 'f', long_click: Date}
+    - {click: 'g', long_click: Time}
+    - {click: 'h', long_click: Left}
+    - {click: 'j', long_click: Down}
+    - {click: 'k', long_click: Up}
+    - {click: 'l', long_click: Right}
+    - {width: 5}
+    - {click: Shift_L, has_menu: "'", long_click: RepeatCommit, width: 15}
+    - {click: 'z', long_click: Zdic3}
+    - {click: 'x', long_click: cut}
+    - {click: 'c', long_click: copy}
+    - {click: 'v', long_click: paste}
+    - {click: 'b', long_click: "`"}
+    - {click: 'n', long_click: "?"}
+    - {click: 'm', long_click: "/"}
+    - {click: BackSpace, width: 15}
+    - {click: Mode_switch, long_click: Menu, width: 15}
+    - {click: Keyboard_symbols, long_click: Keyboard_number}
+    - {click: ',', long_click: ';'}
+    - {click: space, width: 30}
+    - {click: '.', long_click: ':'}
+    - {click: '"', long_click: "'"}
+    - {click: Return, composing: Return1, long_click: CommitComment, width: 15}
+
+  "preset_keys/To_Start": {label: 文首, send: Control+Home}
+  "preset_keys/To_End": {label: 文尾, send: Control+End}
+  "preset_keys/Zdic3": {label: 字典, command: run, option: "https://www.zdic.net/hans/%3$s"} #搜索網頁: %3$s爲范围选择的字符，不选会发送光标前的全文
+
